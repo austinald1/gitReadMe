@@ -28,34 +28,29 @@ function renderLicenseBadge(license) {
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(data) {
     return `# ${data.title}
-    https://github.com/${data.username}/${data.title}
-    ![GitHub license](${renderLicenseBadge(data.license)})
-    # Description
-    ${data.description}
-    # Table of Contents 
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
-    # Installation
-    The following necessary dependencies must be installed to run the application properly: ${
-      data.installation
-    }
-    # Usage
-    In order to use this app, ${data.usage}
-    # License
-    This project is licensed under the ${data.license} license. 
-    # Contributing
-    ​Contributors: ${data.contributing}
-    # Tests
-    The following is needed to run the test: ${data.tests}
-    # Questions
-    If you have any questions about the repo, open an issue or contact ${
-      data.username
-    } directly at : ${data.email}.
-  `;
+https://github.com/${data.username}/${data.title}
+![GitHub license](${renderLicenseBadge(data.license)})
+# Description
+${data.description}
+# Table of Contents 
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+# Installation
+The following necessary dependencies must be installed to run the application properly: ${data.installation}
+# Usage
+In order to use this app, ${data.usage}
+# License
+This project is licensed under the ${data.license} license. 
+# Contributing
+​Contributors: ${data.contributing}
+# Tests
+The following is needed to run the test: ${data.tests}
+# Questions
+If you have any questions about the repo, open an issue or contact ${data.username} directly at : ${data.email}.`;
   }
   
   module.exports = generateMarkdown;
